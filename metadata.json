@@ -1,0 +1,6 @@
+{
+  "name": "ماشین حساب مهندسی و رسم نمودار",
+  "description": "ماشین حساب مهندسی پیشرفته با قابلیت رسم نمودارهای ریاضی، توابع پیچیده، ذخیره تاریخچه محاسبات و قابلیت نصب اپلیکیشن",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

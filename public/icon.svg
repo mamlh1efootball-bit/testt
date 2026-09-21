@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="curveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="btnGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded card -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)" />
+  <rect x="12" y="12" width="488" height="488" rx="90" fill="none" stroke="#334155" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Graph Coordinate Grid inside icon -->
+  <g opacity="0.25" stroke="#94a3b8" stroke-width="2" stroke-dasharray="4 6">
+    <line x1="80" y1="140" x2="432" y2="140" />
+    <line x1="80" y1="200" x2="432" y2="200" />
+    <line x1="80" y1="260" x2="432" y2="260" />
+    <line x1="160" y1="80" x2="160" y2="300" />
+    <line x1="256" y1="80" x2="256" y2="300" />
+    <line x1="352" y1="80" x2="352" y2="300" />
+  </g>
+
+  <!-- Main Axes -->
+  <line x1="70" y1="200" x2="442" y2="200" stroke="#64748b" stroke-width="3" stroke-linecap="round" />
+  <line x1="256" y1="70" x2="256" y2="300" stroke="#64748b" stroke-width="3" stroke-linecap="round" />
+
+  <!-- High-tech Sinusoid / Mathematical Wave Curve -->
+  <path d="M 80 200 C 130 90, 190 90, 256 200 C 322 310, 382 310, 432 140" fill="none" stroke="url(#curveGrad)" stroke-width="12" stroke-linecap="round" filter="url(#glow)" />
+
+  <!-- Calculator Function Keys Grid at the bottom -->
+  <g transform="translate(80, 330)">
+    <!-- Button 1: f(x) -->
+    <rect x="0" y="0" width="76" height="64" rx="16" fill="url(#btnGrad)" stroke="#475569" stroke-width="2" />
+    <text x="38" y="40" fill="#38bdf8" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">f(x)</text>
+
+    <!-- Button 2: ∫dx -->
+    <rect x="92" y="0" width="76" height="64" rx="16" fill="url(#btnGrad)" stroke="#475569" stroke-width="2" />
+    <text x="130" y="40" fill="#a855f7" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">∫dx</text>
+
+    <!-- Button 3: π -->
+    <rect x="184" y="0" width="76" height="64" rx="16" fill="url(#btnGrad)" stroke="#475569" stroke-width="2" />
+    <text x="222" y="40" fill="#f43f5e" font-family="sans-serif" font-size="24" font-weight="bold" text-anchor="middle">π</text>
+
+    <!-- Button 4: = -->
+    <rect x="276" y="0" width="76" height="64" rx="16" fill="#6366f1" />
+    <text x="314" y="42" fill="#ffffff" font-family="sans-serif" font-size="32" font-weight="bold" text-anchor="middle">=</text>
+  </g>
+
+  <!-- Highlight badge point on graph -->
+  <circle cx="256" cy="200" r="8" fill="#38bdf8" stroke="#ffffff" stroke-width="3" />
+  <circle cx="160" cy="115" r="8" fill="#ec4899" stroke="#ffffff" stroke-width="3" />
+</svg>
